@@ -237,8 +237,8 @@ Item {
     Item {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        // anchors.rightMargin: FishUI.Units.largeSpacing
-        // anchors.bottomMargin: FishUI.Units.largeSpacing
+        anchors.rightMargin: FishUI.Units.largeSpacing
+        anchors.bottomMargin: FishUI.Units.smallSpacing * 1.5
 
         width: 50
         height: 50 + FishUI.Units.largeSpacing
