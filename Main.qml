@@ -264,19 +264,19 @@ Item {
         id: actionMenu
 
         QQC2.MenuItem {
-            text: "Suspend"
+            text: qsTr("Suspend")
             onClicked: sddm.suspend()
             visible: sddm.canSuspend
         }
 
         QQC2.MenuItem {
-            text: "Reboot"
+            text: qsTr("Reboot")
             onClicked: sddm.reboot()
             visible: sddm.canReboot
         }
 
         QQC2.MenuItem {
-            text: "shutdown"
+            text: qsTr("Shutdown")
             onClicked: sddm.powerOff()
             visible: sddm.canPowerOff
         }
