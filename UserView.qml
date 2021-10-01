@@ -50,7 +50,8 @@ ListView {
         opacity: control.currentIndex === index ? 1.0 : 0.3
         scale: control.currentIndex === index ? 1.0 : 0.9
 
-        property string userName: model.realName || model.name
+        property string displayName: model.realName || model.name
+        property string userName: model.name
 
         MouseArea {
             id: _itemMouseArea
@@ -97,7 +98,7 @@ ListView {
 
             QQC2.Label {
                 Layout.alignment: Qt.AlignHCenter
-                text: _item.userName
+                text: _item.displayName
             }
         }
     }
